@@ -9,8 +9,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #7e9edf;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-form {
+  background-color: #21fc05;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +41,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#map {
+  height: 100vh;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

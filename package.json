@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-map-react": "^1.1.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-google-location": "^1.2.2",
+    "react-loadscript": "^1.0.2",
+    "react-router": "^3.2.0",
     "react-scripts": "2.1.5"
   },
   "scripts": {
