@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './Logo.png';
 import './App.css';
 
 class App extends Component {
@@ -25,9 +25,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Train Tracker</h1>
-          <img src={logo} className="App-logo" alt="logo" />
-          <input type="submit" value="Map" />
+        <img src={logo} className="App-logo" alt="logo"/>
+          <h1>Train Tracks</h1>
         </header>
         <div className="App">
         <form className="App-form" onSubmit={this.handleSubmit}>
@@ -38,6 +37,7 @@ class App extends Component {
         <input type="submit" value="Submit" />
       </form>
       </div>
+      
       </div>
     );
   }

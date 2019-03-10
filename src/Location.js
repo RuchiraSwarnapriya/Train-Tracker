@@ -16,7 +16,7 @@ class App extends Component {
           center: {lat: -34.397, lng: 150.644},
           zoom: 18
         });
-        var infoWindow = new window.google.maps.InfoWindow;
+        var infoWindow = new window.google.maps.InfoWindow();
         var handleLocationError=(browserHasGeolocation, infoWindow, pos)=> {
           infoWindow.setPosition(pos);
           infoWindow.setContent(browserHasGeolocation ?
@@ -31,7 +31,8 @@ class App extends Component {
               lng: position.coords.longitude
             };
                         
-            var marker = new window.google.maps.Marker({
+            var marker;
+            marker = new window.google.maps.Marker({
                position:{lat: position.coords.latitude,
                lng: position.coords.longitude} ,
                map: map,
